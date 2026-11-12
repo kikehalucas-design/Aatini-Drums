@@ -1,0 +1,13 @@
+Aatini Drums v0.1 : boite a rythmes inspiree de la Roland TR-8S (usage personnel)
+
+Contenu : CMakeLists.txt, PluginProcessor.*, PluginEditor.*, TR8Voices.h, TR8Sequencer.h, MeghirLogo.h,
+install.sh, build-mac.yml (a coller dans .github/workflows/main.yml sur GitHub).
+
+Utilisation :
+- Instrument VST3 / AU : il recoit du MIDI (BD 36, SD 38, LT 43, MT 47, HT 50, RS 37, HC 39, CH 42, OH 46, CC 49, RC 51)
+  et joue aussi son propre sequenceur.
+- SYNC allume : le sequenceur suit la lecture d'Ableton (tempo et position). Sinon, bouton PLAY et potard TEMPO.
+- Choisis un instrument avec son pad du bas (il joue le son), puis edite les 16 pas : clic = activer, Alt + clic = note faible.
+- ACCENT : edite la piste d'accent. VARIATION A a H : clic = choisir, Maj + clic = enchainer plusieurs variations.
+- FILL 1 / FILL 2 : insere un fill-in a la prochaine mesure.
+- Chaque instrument a un bouton 808 / 909 pour changer de modele de son.
